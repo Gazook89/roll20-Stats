@@ -1,0 +1,18 @@
+{
+    "manifest_version"  : 2,
+    "name"              : "Roll20 Stats",
+    "version"           : "1.0",
+
+    "description"       : "Collects statistics from a Roll20 session.",
+    
+    "icons" : {
+        "48" : "icons/icons8-chess-clock-48.png"
+    },
+
+    "content_scripts" : [
+        {
+            "matches"   : ["*://*.roll20.net/*"],
+            "js"        : ["main.js"]
+        }
+    ]
+}
